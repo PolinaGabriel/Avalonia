@@ -1,0 +1,290 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication1.MainWindow"
+        Title="AvaloniaApplication1" MaxHeight="390" MaxWidth="775">
+	<Grid ShowGridLines="true" ColumnDefinitions="190, 113, 85, 67, 320" RowDefinitions="15, 26, 17, 30, 17, 30, 30, 22, 22, 22, 20, 30, 20, 30, 25, 20">
+		<Panel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="3">
+			<Rectangle Fill="#c7e9f2">
+				<Rectangle.OpacityMask>
+					<LinearGradientBrush StartPoint="100%,0%" EndPoint="100%,100%">
+						<LinearGradientBrush.GradientStops>
+							<GradientStop Offset="0" Color="#c7e9f2"/>
+							<GradientStop Offset="1" Color="Transparent"/>
+						</LinearGradientBrush.GradientStops>
+					</LinearGradientBrush>
+				</Rectangle.OpacityMask>
+			</Rectangle>
+		</Panel>
+		<Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="16" BorderBrush="#f7c486" BorderThickness="4"></Border>
+		<StackPanel Grid.Column="0" Grid.Row="1">
+			<TextBlock Margin="20 5" FontSize="12" FontWeight="Bold">Имя / Логин</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="3">
+			<TextBlock Margin="20 8" FontSize="12" FontWeight="Bold">Почта</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="5">
+			<TextBlock Margin="20 8" FontSize="12" FontWeight="Bold">Пароль</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="6">
+			<TextBlock Margin="20 8" FontSize="12" FontWeight="Bold">Повторите пароль</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="7">
+			<TextBlock Margin="20 4" FontSize="12" FontWeight="Bold">Страна</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="8">
+			<TextBlock Margin="20 4" FontSize="12" FontWeight="Bold">Дата рождения</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="9">
+			<TextBlock Margin="20 4" FontSize="12" FontWeight="Bold">Кто Вы</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="11">
+			<TextBlock Margin="20 8" FontSize="12" FontWeight="Bold">Проверочный вопрос</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="13">
+			<TextBlock Margin="20 8" FontSize="12" FontWeight="Bold">Проверочный ответ</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3">
+			<TextBox Margin="1 1" BorderBrush="LightGray" Background="White" FontSize="11" MinHeight="10" CornerRadius="0" Padding="3"></TextBox>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2">
+			<TextBlock Margin="17 1" FontSize="11">Предварительно проверьте логин</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Right">
+			<TextBlock Margin="0 1" FontSize="11" Foreground="#513ac2">проверить</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3">
+			<TextBox Margin="1 4" BorderBrush="LightGray" FontSize="11" MinHeight="10" CornerRadius="0" Padding="3"></TextBox>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Right">
+			<TextBlock Margin="0 1" FontSize="11">Вам будет выслано письмо с подтверждением</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3">
+			<TextBox Margin="1 4" BorderBrush="LightGray" FontSize="11" MinHeight="10" CornerRadius="0" Padding="3"></TextBox>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3">
+			<TextBox Margin="1 4" BorderBrush="LightGray" FontSize="11" MinHeight="10" CornerRadius="0" Padding="3"></TextBox>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3">
+			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="200" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+					<ComboBoxItem>Выберите страну</ComboBoxItem>
+					<ComboBoxItem>Автсралия</ComboBoxItem>
+					<ComboBoxItem>Беларусь</ComboBoxItem>
+					<ComboBoxItem>Бельгия</ComboBoxItem>
+					<ComboBoxItem>Болгария</ComboBoxItem>
+					<ComboBoxItem>Великобритания</ComboBoxItem>
+					<ComboBoxItem>Венгрия</ComboBoxItem>
+					<ComboBoxItem>Германия</ComboBoxItem>
+					<ComboBoxItem>Греция</ComboBoxItem>
+					<ComboBoxItem>Египет</ComboBoxItem>
+					<ComboBoxItem>Израиль</ComboBoxItem>
+					<ComboBoxItem>Ирландия</ComboBoxItem>
+					<ComboBoxItem>Испания</ComboBoxItem>
+					<ComboBoxItem>Италия</ComboBoxItem>
+					<ComboBoxItem>Казахстан</ComboBoxItem>
+					<ComboBoxItem>Канада</ComboBoxItem>
+					<ComboBoxItem>Кипр</ComboBoxItem>
+					<ComboBoxItem>Корея</ComboBoxItem>
+					<ComboBoxItem>Латвия</ComboBoxItem>
+					<ComboBoxItem>Литва</ComboBoxItem>
+					<ComboBoxItem>Молдова</ComboBoxItem>
+					<ComboBoxItem>Нидерланды</ComboBoxItem>
+					<ComboBoxItem>Норвегия</ComboBoxItem>
+					<ComboBoxItem>ОАЭ</ComboBoxItem>
+					<ComboBoxItem>Польша</ComboBoxItem>
+					<ComboBoxItem>Португалия</ComboBoxItem>
+					<ComboBoxItem>Россия</ComboBoxItem>
+					<ComboBoxItem>Румыния</ComboBoxItem>
+					<ComboBoxItem>СССР...</ComboBoxItem>
+					<ComboBoxItem>США</ComboBoxItem>
+					<ComboBoxItem>Турция</ComboBoxItem>
+					<ComboBoxItem>Украина</ComboBoxItem>
+					<ComboBoxItem>Финляндия</ComboBoxItem>
+					<ComboBoxItem>Франция</ComboBoxItem>
+					<ComboBoxItem>Чехия</ComboBoxItem>
+					<ComboBoxItem>Швейцария</ComboBoxItem>
+					<ComboBoxItem>Швеция</ComboBoxItem>
+					<ComboBoxItem>Эстония</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="8">
+			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="150" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+				<ComboBoxItem>Число</ComboBoxItem>
+				<ComboBoxItem>01</ComboBoxItem>
+				<ComboBoxItem>02</ComboBoxItem>
+				<ComboBoxItem>03</ComboBoxItem>
+				<ComboBoxItem>04</ComboBoxItem>
+				<ComboBoxItem>05</ComboBoxItem>
+				<ComboBoxItem>06</ComboBoxItem>
+				<ComboBoxItem>07</ComboBoxItem>
+				<ComboBoxItem>08</ComboBoxItem>
+				<ComboBoxItem>09</ComboBoxItem>
+				<ComboBoxItem>10</ComboBoxItem>
+				<ComboBoxItem>11</ComboBoxItem>
+				<ComboBoxItem>12</ComboBoxItem>
+				<ComboBoxItem>13</ComboBoxItem>
+				<ComboBoxItem>14</ComboBoxItem>
+				<ComboBoxItem>15</ComboBoxItem>
+				<ComboBoxItem>16</ComboBoxItem>
+				<ComboBoxItem>17</ComboBoxItem>
+				<ComboBoxItem>18</ComboBoxItem>
+				<ComboBoxItem>19</ComboBoxItem>
+				<ComboBoxItem>20</ComboBoxItem>
+				<ComboBoxItem>21</ComboBoxItem>
+				<ComboBoxItem>22</ComboBoxItem>
+				<ComboBoxItem>23</ComboBoxItem>
+				<ComboBoxItem>24</ComboBoxItem>
+				<ComboBoxItem>25</ComboBoxItem>
+				<ComboBoxItem>26</ComboBoxItem>
+				<ComboBoxItem>27</ComboBoxItem>
+				<ComboBoxItem>28</ComboBoxItem>
+				<ComboBoxItem>29</ComboBoxItem>
+				<ComboBoxItem>30</ComboBoxItem>
+				<ComboBoxItem>31</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel Grid.Column="2" Grid.Row="8">
+			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="150" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+				<ComboBoxItem>Месяц</ComboBoxItem>
+				<ComboBoxItem>января</ComboBoxItem>
+				<ComboBoxItem>февраля</ComboBoxItem>
+				<ComboBoxItem>марта</ComboBoxItem>
+				<ComboBoxItem>апреля</ComboBoxItem>
+				<ComboBoxItem>мая</ComboBoxItem>
+				<ComboBoxItem>июня</ComboBoxItem>
+				<ComboBoxItem>июля</ComboBoxItem>
+				<ComboBoxItem>августа</ComboBoxItem>
+				<ComboBoxItem>сентября</ComboBoxItem>
+				<ComboBoxItem>октября</ComboBoxItem>
+				<ComboBoxItem>ноября</ComboBoxItem>
+				<ComboBoxItem>декабря</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel Grid.Column="3" Grid.Row="8">
+			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="150" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+				<ComboBoxItem>Год</ComboBoxItem>
+				<ComboBoxItem>1930</ComboBoxItem>
+				<ComboBoxItem>1931</ComboBoxItem>
+				<ComboBoxItem>1932</ComboBoxItem>
+				<ComboBoxItem>1933</ComboBoxItem>
+				<ComboBoxItem>1934</ComboBoxItem>
+				<ComboBoxItem>1935</ComboBoxItem>
+				<ComboBoxItem>1936</ComboBoxItem>
+				<ComboBoxItem>1937</ComboBoxItem>
+				<ComboBoxItem>1938</ComboBoxItem>
+				<ComboBoxItem>1939</ComboBoxItem>
+				<ComboBoxItem>1940</ComboBoxItem>
+				<ComboBoxItem>1941</ComboBoxItem>
+				<ComboBoxItem>1942</ComboBoxItem>
+				<ComboBoxItem>1943</ComboBoxItem>
+				<ComboBoxItem>1944</ComboBoxItem>
+				<ComboBoxItem>1945</ComboBoxItem>
+				<ComboBoxItem>1946</ComboBoxItem>
+				<ComboBoxItem>1947</ComboBoxItem>
+				<ComboBoxItem>1948</ComboBoxItem>
+				<ComboBoxItem>1949</ComboBoxItem>
+				<ComboBoxItem>1950</ComboBoxItem>
+				<ComboBoxItem>1951</ComboBoxItem>
+				<ComboBoxItem>1952</ComboBoxItem>
+				<ComboBoxItem>1953</ComboBoxItem>
+				<ComboBoxItem>1954</ComboBoxItem>
+				<ComboBoxItem>1955</ComboBoxItem>
+				<ComboBoxItem>1956</ComboBoxItem>
+				<ComboBoxItem>1957</ComboBoxItem>
+				<ComboBoxItem>1958</ComboBoxItem>
+				<ComboBoxItem>1959</ComboBoxItem>
+				<ComboBoxItem>1960</ComboBoxItem>
+				<ComboBoxItem>1961</ComboBoxItem>
+				<ComboBoxItem>1962</ComboBoxItem>
+				<ComboBoxItem>1963</ComboBoxItem>
+				<ComboBoxItem>1964</ComboBoxItem>
+				<ComboBoxItem>1965</ComboBoxItem>
+				<ComboBoxItem>1966</ComboBoxItem>
+				<ComboBoxItem>1967</ComboBoxItem>
+				<ComboBoxItem>1968</ComboBoxItem>
+				<ComboBoxItem>1969</ComboBoxItem>
+				<ComboBoxItem>1970</ComboBoxItem>
+				<ComboBoxItem>1971</ComboBoxItem>
+				<ComboBoxItem>1972</ComboBoxItem>
+				<ComboBoxItem>1973</ComboBoxItem>
+				<ComboBoxItem>1973</ComboBoxItem>
+				<ComboBoxItem>1974</ComboBoxItem>
+				<ComboBoxItem>1975</ComboBoxItem>
+				<ComboBoxItem>1976</ComboBoxItem>
+				<ComboBoxItem>1977</ComboBoxItem>
+				<ComboBoxItem>1978</ComboBoxItem>
+				<ComboBoxItem>1989</ComboBoxItem>
+				<ComboBoxItem>1980</ComboBoxItem>
+				<ComboBoxItem>1981</ComboBoxItem>
+				<ComboBoxItem>1982</ComboBoxItem>
+				<ComboBoxItem>1983</ComboBoxItem>
+				<ComboBoxItem>1984</ComboBoxItem>
+				<ComboBoxItem>1985</ComboBoxItem>
+				<ComboBoxItem>1986</ComboBoxItem>
+				<ComboBoxItem>1987</ComboBoxItem>
+				<ComboBoxItem>1988</ComboBoxItem>
+				<ComboBoxItem>1999</ComboBoxItem>
+				<ComboBoxItem>1990</ComboBoxItem>
+				<ComboBoxItem>1991</ComboBoxItem>
+				<ComboBoxItem>1992</ComboBoxItem>
+				<ComboBoxItem>1993</ComboBoxItem>
+				<ComboBoxItem>1994</ComboBoxItem>
+				<ComboBoxItem>1995</ComboBoxItem>
+				<ComboBoxItem>1996</ComboBoxItem>
+				<ComboBoxItem>1997</ComboBoxItem>
+				<ComboBoxItem>1998</ComboBoxItem>
+				<ComboBoxItem>1999</ComboBoxItem>
+				<ComboBoxItem>2000</ComboBoxItem>
+				<ComboBoxItem>2001</ComboBoxItem>
+				<ComboBoxItem>2002</ComboBoxItem>
+				<ComboBoxItem>2003</ComboBoxItem>
+				<ComboBoxItem>2004</ComboBoxItem>
+				<ComboBoxItem>2005</ComboBoxItem>
+				<ComboBoxItem>2006</ComboBoxItem>
+				<ComboBoxItem>2007</ComboBoxItem>
+				<ComboBoxItem>2008</ComboBoxItem>
+				<ComboBoxItem>2009</ComboBoxItem>
+				<ComboBoxItem>2010</ComboBoxItem>
+				<ComboBoxItem>2011</ComboBoxItem>
+				<ComboBoxItem>2012</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3">
+			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="150" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+				<ComboBoxItem>Мужчина</ComboBoxItem>
+				<ComboBoxItem>Женщина</ComboBoxItem>
+				<ComboBoxItem>Программист</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel Margin="0 5" Grid.Column="1" Grid.Row="10" Grid.RowSpan="3" Grid.ColumnSpan="3">
+			<Image Source="avares://GabrielRegistration/Source/Капча.jpg" Width="170" HorizontalAlignment="Right"></Image>			
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="3">
+			<TextBox Margin="1 4" Width="10" FontSize="11" MinHeight="10" HorizontalAlignment="Right" BorderBrush="LightGray" CornerRadius="0" Padding="3"></TextBox>
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="14" Grid.ColumnSpan="3">
+			<Button Margin="0 3" FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" Background="#f5f5f5" Foreground="#424242" BorderBrush="LightGray" CornerRadius="2" Padding="5 2">Завершить регистрацию</Button>
+		</StackPanel>
+		<StackPanel Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="3">
+			<TextBlock Margin="27 0" FontSize="11" TextWrapping="Wrap">Добро пожаловать в Кинозал.ТВ</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="4" Grid.Row="1" Grid.RowSpan="6">
+			<TextBlock Margin="27 25 27 0" FontSize="11" TextWrapping="Wrap">Регистрация позволит Вам создать личный профиль</TextBlock>
+			<TextBlock Margin="27 0" FontSize="11" TextWrapping="Wrap">Вы сможете скачивать и комментировать раздачи</TextBlock>
+			<TextBlock Margin="27 0" FontSize="11" TextWrapping="Wrap">Быть участником групп и общаться со зрителями</TextBlock>
+			<TextBlock Margin="27 0" FontSize="11" TextWrapping="Wrap">Добавлять в закладки фильмы и страницы персон</TextBlock>
+			<TextBlock Margin="27 0" FontSize="11" TextWrapping="Wrap">Участвовать в рейтингах и писать отзывы</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="4" Grid.Row="7" Grid.RowSpan="2">
+			<TextBlock Margin="27 5 30 0" FontSize="11" TextWrapping="Wrap">Все поля обязательны к заполнению</TextBlock>
+			<TextBlock Margin="27 0" FontSize="11" TextWrapping="Wrap">Вы получите письмо для подтверждения регистрации</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="4" Grid.Row="9" Grid.RowSpan="3">
+			<TextBlock Margin="27 13 30 0" FontSize="11" TextWrapping="Wrap">Будем рады Вашему визиту</TextBlock>
+			<TextBlock Margin="27 0" FontSize="11" TextWrapping="Wrap">Благодарим за регистрацию</TextBlock>
+			<TextBlock Margin="27 0" FontSize="11" TextWrapping="Wrap">С уважением, Администрация Кинозал.ТВ</TextBlock>
+		</StackPanel>
+	</Grid>
+</Window>
