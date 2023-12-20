@@ -5,7 +5,7 @@
         mc:Ignorable="d" d:DesignWidth="795" d:DesignHeight="430"
         x:Class="AvaloniaApplication1.MainWindow"
         Title="AvaloniaApplication1" MaxHeight="430" MaxWidth="795" Background="White">
-	<Grid ShowGridLines="" ColumnDefinitions="194, 117, 89, 71, 324" RowDefinitions="19, 30, 20.5, 34, 20.5, 34, 34, 26, 26, 26, 24, 34, 24, 34, 29, 15">
+	<Grid ShowGridLines="true" ColumnDefinitions="194, 117, 89, 71, 324" RowDefinitions="19, 30, 20.5, 34, 20.5, 34, 34, 26, 26, 26, 24, 34, 24, 34, 29, 15">
 		<Panel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="3">
 			<Rectangle Fill="#c7e9f2">
 				<Rectangle.OpacityMask>
@@ -271,7 +271,7 @@
 			<TextBlock Margin="27 15 0 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Добро пожаловать в Кинозал.ТВ</TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="4" Grid.Row="1" Grid.RowSpan="6">
-			<TextBlock Margin="27 20 27 0" FontSize="11" TextWrapping="Wrap">
+			<TextBlock Margin="27 20 27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">
 				Регистрация позволит Вам создать личный профиль<LineBreak/>
 				Вы сможете скачивать и комментировать раздачи<LineBreak/>
 				Быть участником групп и общаться со зрителями<LineBreak/>
