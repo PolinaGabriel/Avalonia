@@ -2,10 +2,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="775" d:DesignHeight="376"
+        mc:Ignorable="d" d:DesignWidth="795" d:DesignHeight="430"
         x:Class="AvaloniaApplication1.MainWindow"
-        Title="AvaloniaApplication1" MaxHeight="376" MaxWidth="775" Background="White">
-	<Grid ShowGridLines="true" ColumnDefinitions="190, 113, 85, 67, 320" RowDefinitions="15, 26, 17, 30, 17, 30, 30, 22, 22, 22, 20, 30, 20, 30, 25, 20">
+        Title="AvaloniaApplication1" MaxHeight="430" MaxWidth="795" Background="White">
+	<Grid ShowGridLines="" ColumnDefinitions="194, 117, 89, 71, 324" RowDefinitions="19, 30, 20.5, 34, 20.5, 34, 34, 26, 26, 26, 24, 34, 24, 34, 29, 15">
 		<Panel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="3">
 			<Rectangle Fill="#c7e9f2">
 				<Rectangle.OpacityMask>
@@ -47,28 +47,28 @@
 			<TextBlock Margin="20 8" Foreground="Black" FontSize="12" FontWeight="Bold">Проверочный ответ</TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3">
-			<TextBox Margin="1 1" BorderBrush="LightGray" Background="White" Foreground="Black" FontSize="11" MinHeight="10" CornerRadius="0" Padding="3"></TextBox>
+			<TextBox Margin="1 2" BorderBrush="LightGray" Background="White" Foreground="Black" FontSize="11" MinHeight="10" CornerRadius="0" Padding="5"></TextBox>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2">
-			<TextBlock Margin="17 1" Foreground="Black" FontSize="11">Предварительно проверьте логин</TextBlock>
+			<TextBlock Margin="31 3" Foreground="Black" FontSize="11">Предварительно проверьте логин</TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Right">
-			<TextBlock Margin="0 1" FontSize="11" Foreground="#513ac2">проверить</TextBlock>
+			<TextBlock Margin="0 3" FontSize="11" Foreground="#513ac2">проверить</TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3">
-			<TextBox Margin="1 4" BorderBrush="LightGray" Background="White" Foreground="Black" FontSize="11" MinHeight="10" CornerRadius="0" Padding="3"></TextBox>
+			<TextBox Margin="1 4" BorderBrush="LightGray" Background="White" Foreground="Black" FontSize="11" MinHeight="10" CornerRadius="0" Padding="5"></TextBox>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Right">
-			<TextBlock Margin="0 1" Foreground="Black" FontSize="11">Вам будет выслано письмо с подтверждением</TextBlock>
+			<TextBlock Margin="0 3" Foreground="Black" FontSize="11">Вам будет выслано письмо с подтверждением</TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3">
-			<TextBox Margin="1 4" BorderBrush="LightGray" Background="White" Foreground="Black" FontSize="11" MinHeight="10" CornerRadius="0" Padding="3"></TextBox>
+			<TextBox Margin="1 4" BorderBrush="LightGray" Background="White" Foreground="Black" FontSize="11" MinHeight="10" CornerRadius="0" Padding="5"></TextBox>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3">
-			<TextBox Margin="1 4" BorderBrush="LightGray" Background="White" Foreground="Black" FontSize="11" MinHeight="10" CornerRadius="0" Padding="3"></TextBox>
+			<TextBox Margin="1 4" BorderBrush="LightGray" Background="White" Foreground="Black" FontSize="11" MinHeight="10" CornerRadius="0" Padding="5"></TextBox>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3">
-			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="200" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+			<ComboBox Margin="0 5" SelectedIndex="0" MaxDropDownHeight="200" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
 					<ComboBoxItem>Выберите страну</ComboBoxItem>
 					<ComboBoxItem>Автсралия</ComboBoxItem>
 					<ComboBoxItem>Беларусь</ComboBoxItem>
@@ -110,7 +110,7 @@
 			</ComboBox>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="8">
-			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="150" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+			<ComboBox Margin="0 5" SelectedIndex="0" MaxDropDownHeight="150" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
 				<ComboBoxItem>Число</ComboBoxItem>
 				<ComboBoxItem>01</ComboBoxItem>
 				<ComboBoxItem>02</ComboBoxItem>
@@ -146,7 +146,7 @@
 			</ComboBox>
 		</StackPanel>
 		<StackPanel Grid.Column="2" Grid.Row="8">
-			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="150" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+			<ComboBox Margin="0 5" SelectedIndex="0" MaxDropDownHeight="150" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
 				<ComboBoxItem>Месяц</ComboBoxItem>
 				<ComboBoxItem>января</ComboBoxItem>
 				<ComboBoxItem>февраля</ComboBoxItem>
@@ -163,7 +163,7 @@
 			</ComboBox>
 		</StackPanel>
 		<StackPanel Grid.Column="3" Grid.Row="8">
-			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="150" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+			<ComboBox Margin="0 5" SelectedIndex="0" MaxDropDownHeight="150" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
 				<ComboBoxItem>Год</ComboBoxItem>
 				<ComboBoxItem>1930</ComboBoxItem>
 				<ComboBoxItem>1931</ComboBoxItem>
@@ -252,7 +252,7 @@
 			</ComboBox>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3">
-			<ComboBox Margin="0 3" SelectedIndex="0" MaxDropDownHeight="150" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
+			<ComboBox Margin="0 5" SelectedIndex="0" MaxDropDownHeight="150" Background="White" Foreground="Black" FontSize="10" MinHeight="10" HorizontalAlignment="Right" CornerRadius="1.5" Padding="2">
 				<ComboBoxItem>Мужчина</ComboBoxItem>
 				<ComboBoxItem>Женщина</ComboBoxItem>
 				<ComboBoxItem>Программист</ComboBoxItem>
@@ -262,29 +262,40 @@
 			<Image Source="avares://GabrielRegistration/Source/Капча.jpg" Width="170" HorizontalAlignment="Right"></Image>			
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="3">
-			<TextBox Margin="1 4" Width="10" Background="White" Foreground="Black" FontSize="11" MinHeight="10" HorizontalAlignment="Right" BorderBrush="LightGray" CornerRadius="0" Padding="3"></TextBox>
+			<TextBox Margin="1 4" Width="10" Background="White" Foreground="Black" FontSize="11" MinHeight="10" HorizontalAlignment="Right" BorderBrush="LightGray" CornerRadius="0" Padding="5"></TextBox>
 		</StackPanel>
 		<StackPanel Grid.Column="1" Grid.Row="14" Grid.ColumnSpan="3">
-			<Button Margin="0 3" FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" Background="#f5f5f5" Foreground="#424242" BorderBrush="LightGray" CornerRadius="2" Padding="5 2">Завершить регистрацию</Button>
+			<Button Margin="0 4" FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" Background="#f5f5f5" Foreground="#7d7d7d" BorderBrush="LightGray" CornerRadius="2" Padding="5 2">Завершить регистрацию</Button>
 		</StackPanel>
-		<StackPanel Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="3">
-			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Добро пожаловать в Кинозал.ТВ</TextBlock>
+		<StackPanel Grid.Column="4" Grid.Row="0" Grid.ColumnSpan="3">
+			<TextBlock Margin="27 15 0 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Добро пожаловать в Кинозал.ТВ</TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="4" Grid.Row="1" Grid.RowSpan="6">
-			<TextBlock Margin="27 25 27 0" FontSize="11" TextWrapping="Wrap">Регистрация позволит Вам создать личный профиль</TextBlock>
-			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Вы сможете скачивать и комментировать раздачи</TextBlock>
-			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Быть участником групп и общаться со зрителями</TextBlock>
-			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Добавлять в закладки фильмы и страницы персон</TextBlock>
-			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Участвовать в рейтингах и писать отзывы</TextBlock>
+			<TextBlock Margin="27 20 27 0" FontSize="11" TextWrapping="Wrap">
+				Регистрация позволит Вам создать личный профиль<LineBreak/>
+				Вы сможете скачивать и комментировать раздачи<LineBreak/>
+				Быть участником групп и общаться со зрителями<LineBreak/>
+				Быть участником групп и общаться со зрителями<LineBreak/>
+				Добавлять в закладки фильмы и страницы персон<LineBreak/>
+				Участвовать в рейтингах и писать отзывы
+		</TextBlock>
+			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap"></TextBlock>
+			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap"></TextBlock>
+			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap"></TextBlock>
+			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap"></TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="4" Grid.Row="7" Grid.RowSpan="2">
-			<TextBlock Margin="27 5 30 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Все поля обязательны к заполнению</TextBlock>
-			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Вы получите письмо для подтверждения регистрации</TextBlock>
+			<TextBlock Margin="27 5 30 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">
+				Все поля обязательны к заполнению<LineBreak/>
+				Вы получите письмо для подтверждения регистрации
+			</TextBlock>
 		</StackPanel>
 		<StackPanel Grid.Column="4" Grid.Row="9" Grid.RowSpan="3">
-			<TextBlock Margin="27 13 30 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Будем рады Вашему визиту</TextBlock>
-			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">Благодарим за регистрацию</TextBlock>
-			<TextBlock Margin="27 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">С уважением, Администрация Кинозал.ТВ</TextBlock>
+			<TextBlock Margin="27 13 30 0" Foreground="Black" FontSize="11" TextWrapping="Wrap">
+				Будем рады Вашему визиту<LineBreak/>
+				Благодарим за регистрацию<LineBreak/>
+				С уважением, Администрация Кинозал.ТВ
+			</TextBlock>
 		</StackPanel>
 	</Grid>
 </Window>
